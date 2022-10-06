@@ -29,3 +29,5 @@ teamData$shotDistribution<-round(ifelse(teamData$team=="Team A",
 teamData$eFGpercentage<-round((teamData$shotsMade+(teamData$isThree*0.5*teamData$shotsMade))/teamData$shotsTaken,4)
 
 finalTeamData<-teamData[c("team","shotType","shotDistribution","eFGpercentage")]
+
+print(finalTeamData)
